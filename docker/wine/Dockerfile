@@ -1,4 +1,4 @@
-FROM electronuserland/builder:latest
+FROM electronuserland/builder:20.39.0
 
 RUN apt-get update && apt-get install -y --no-install-recommends software-properties-common && dpkg --add-architecture i386 && curl -L https://dl.winehq.org/wine-builds/winehq.key > winehq.key && apt-key add winehq.key && apt-add-repository https://dl.winehq.org/wine-builds/ubuntu && \
   apt-get update && \
